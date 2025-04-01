@@ -25,7 +25,7 @@ import { useState } from "react"
  return(
  <div style={{display:"flex",gap:"10px",alignItems:"center"}}>
    <div onClick={isEditable?()=>{}:handleChange} style={{display:"flex",alignItems:"center",gap:"10px",width:"100%"}}>
-   <div  style={{width:"20px",height:"20px",borderRadius:"99px",border:selected?"1px solid darkcyan":"1px solid black",backgroundColor:selected?"darkcyan":"white",cursor:"pointer"}}></div>
+   <div  style={{width:"20px",height:"20px",borderRadius:"99px",border:selected?"1px solid darkcyan":"1px solid black",backgroundColor:selected ? "darkcyan":"white",cursor:"pointer"}}></div>
     <input type="text"
         onChange={(event)=>{setTitle(event.target.value)}}
         value={isEditable?title:item.title}
